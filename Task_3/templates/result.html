@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Результаты по маршруту</h1>
+    <h2>Начальный город: {{ start_city }}</h2>
+    <p>Температура: {{ start_weather.temperature }} °C</p>
+    <p>Скорость ветра: {{ start_weather.wind_speed }} км/ч</p>
+    <p>Осадки: {{ start_weather.precipitation_probability }} мм</p>
+    <p>Условия: {{ start_condition }}</p>
+
+    <h2>Конечный город: {{ end_city }}</h2>
+    <p>Температура: {{ end_weather.temperature }} °C</p>
+    <p>Скорость ветра: {{ end_weather.wind_speed }} км/ч</p>
+    <p>Осадки: {{ end_weather.precipitation_probability }} мм</p>
+    <p>Условия: {{ end_condition }}</p>
+
+    <a href="/">Назад</a>
+</body>
+</html>
